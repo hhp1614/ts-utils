@@ -12,7 +12,7 @@ npm i @hhp1614/utils
 
 [文件下载](https://raw.githubusercontent.com/hhp1614/ts-utils/master/dist/utils.js)
 
-`script` 标签引入（全局变量为 `Utils`，相当于 `import * as Utils form @hhp1614/utils;`）：
+`script` 标签引入（全局变量为 `Utils`，相当于 `import * as Utils from @hhp1614/utils;`）：
 
 ```html
 <script src="https://raw.githubusercontent.com/hhp1614/ts-utils/master/dist/utils.js"></script>

@@ -1,6 +1,6 @@
 {
   "name": "@hhp1614/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "my utils",
   "keywords": [
     "utils",
@@ -38,5 +38,9 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "files": [
+    "@types/",
+    "dist/"
+  ]
 }

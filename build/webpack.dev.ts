@@ -7,6 +7,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: webpack.Configuration = {
   mode: 'development',
+  entry: './src/test.ts',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './example',

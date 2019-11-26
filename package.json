@@ -1,8 +1,11 @@
 {
   "name": "@hhp1614/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my utils",
-  "license": "MIT",
+  "keywords": [
+    "utils",
+    "device"
+  ],
   "main": "dist/utils.js",
   "module": "dist/utils.js",
   "types": "@types/src/main.d.ts",
@@ -10,6 +13,9 @@
     "start": "webpack-dev-server --config build/webpack.dev.ts",
     "build": "webpack --config build/webpack.prod.ts"
   },
+  "author": "hhp1614",
+  "private": false,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/hhp1614/ts-utils.git"

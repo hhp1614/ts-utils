@@ -3,9 +3,7 @@ import { IBrowserInfo, ISystemInfo } from './device.types';
  * 类：设备
  */
 export declare class Device {
-    get ua(): string;
-    set ua(value: string);
-    private _ua;
+    ua: string;
     constructor();
     /**
      * 获取移动设备类型

@@ -8,42 +8,33 @@ import { getModel } from './getModel';
  * 类：设备
  */
 export class Device {
-  // 获取 userAgent
-  get ua(): string {
-    return this._ua;
-  }
-
-  // 设置 userAgent
-  set ua(value: string) {
-    this._ua = value;
-  }
 
   // userAgent
-  private _ua: string;
+  public ua: string;
 
   constructor() {
-    this._ua = navigator.userAgent.toLowerCase() || '';
+    this.ua = navigator.userAgent.toLowerCase() || '';
   }
 
   /**
    * 获取移动设备类型
    */
   public getModel(): string {
-    return getModel(this._ua);
+    return getModel(this.ua);
   }
 
   /**
    * 获取操作系统信息
    */
   public getOS(): ISystemInfo {
-    return getOS(this._ua);
+    return getOS(this.ua);
   }
 
   /**
    * 获取浏览器信息
    */
   public getBrowser(): IBrowserInfo {
-    return getBrowser(this._ua);
+    return getBrowser(this.ua);
   }
 
   /**

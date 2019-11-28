@@ -35,4 +35,5 @@ import { 模块名 } from '@hhp1614/utils';
 
 - [设备方法](./docs/device.md)
 - [常用方法](./docs/func.md)
+- [类型检查方法](./docs/type.md)
 

@@ -1,4 +1,6 @@
 // 通用
+import { getUA } from './getUA';
+
 function getCommonModel(ua: string): string {
   const commonReg: RegExp = /(ZTE|Samsung|Motorola|HTC|Coolpad|Huawei|Lenovo|LG|Sony Ericsson|Oppo|TCL|Vivo|Sony|Meizu|Nokia|Pixel 2( XL)?)/i;
   const match = ua.match(commonReg);
@@ -24,34 +26,34 @@ function getHuaweiModel(ua: string): string {
 }
 
 // Windows Phone
-function getWindowsPhoneModel(ua: string) {
+function getWindowsPhoneModel(ua: string): string {
   const match = ua.match(/Microsoft/i);
   return match ? 'windowsphone' : '';
 }
 
 // 小米
-function getXiaomiModel(ua: string) {
+function getXiaomiModel(ua: string): string {
   const match = ua.match(/;\s(mi|m1|m2|m3|m4|hm)/i);
   return match ? 'xiaomi' : '';
 }
 
 // 魅族
-function getMeizuModel(ua: string) {
+function getMeizuModel(ua: string): string {
   const match = ua.match(/\s(mx\d*\w*|mz-(\w*))build/i);
   return match ? 'meizu' : '';
 }
 
 // 黑莓
-function getBlackberryModel(ua: string) {
+function getBlackberryModel(ua: string): string {
   const match = ua.match(/bb|playbook/i);
   return match ? 'blackberry' : '';
 }
 
 /**
  * 获取设备型号
- * @param ua {string} userAgent
  */
-export function getModel(ua: string) {
+export function getModel(): string {
+  const ua: string = getUA();
   return getCommonModel(ua)
     || getAppleModel(ua)
     || getSamsungModel(ua)

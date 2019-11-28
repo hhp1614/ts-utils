@@ -1,12 +1,15 @@
-import { getVersion, testUA } from './device.helper';
-import { ISystemInfo } from './device.types';
+import { getVersion, testUA } from './_internal/utils';
+import { ISystemInfo } from './_internal/types';
+import { getUA } from './getUA';
 
 /**
  * 获取操作系统信息
- * @param ua {string} userAgent
- * @return {ISystemInfo} 系统信息
+ * @return ISystemInfo.type 系统类型
+ * @return ISystemInfo.version 系统版本
  */
-export function getOS(ua: string): ISystemInfo {
+export function getOS(): ISystemInfo {
+  // userAgent
+  const ua: string = getUA();
   // 类型
   let type: string = 'unknown';
   // 版本

@@ -11,7 +11,8 @@
   "types": "@types/src/main.d.ts",
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.dev.ts",
-    "build": "webpack --config build/webpack.prod.ts"
+    "build": "webpack --config build/webpack.prod.ts",
+    "docs": "typedoc src"
   },
   "author": "hhp1614",
   "private": false,

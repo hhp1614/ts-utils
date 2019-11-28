@@ -1,36 +1,8 @@
-import { IBrowserInfo, ISystemInfo } from './device.types';
-/**
- * 类：设备
- */
-export declare class Device {
-    ua: string;
-    constructor();
-    /**
-     * 获取移动设备类型
-     */
-    getModel(): string;
-    /**
-     * 获取操作系统信息
-     */
-    getOS(): ISystemInfo;
-    /**
-     * 获取浏览器信息
-     */
-    getBrowser(): IBrowserInfo;
-    /**
-     * 获取横竖屏状态
-     */
-    getOrientationStatus(): string;
-    /**
-     * 获取屏幕分辨率
-     */
-    getResolution(): string;
-    /**
-     * 获取网络信息
-     */
-    getNetwork(): string;
-    /**
-     * 获取当前语言
-     */
-    getLanguage(): string;
-}
+export { setUA } from './setUA';
+export { getUA } from './getUA';
+export { getOS } from './getOS';
+export { getBrowser } from './getBrowser';
+export { getOrientationStatus, getResolution } from './getScreen';
+export { getModel } from './getModel';
+export { getLanguage } from './getLanguage';
+export { getNetwork } from './getNetwork';

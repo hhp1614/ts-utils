@@ -1,6 +1,6 @@
 /**
  * 获取横竖屏状态
- * @return {string} vertical | horizontal
+ * @return vertical | horizontal
  */
 export function getOrientationStatus(): string {
   const orientation: MediaQueryList = matchMedia('(orientation: portrait)');
@@ -9,7 +9,9 @@ export function getOrientationStatus(): string {
 
 /**
  * 获取屏幕分辨率
- * @return {string} 长边x短边 e.g. 1920x1080
+ * @return 长边x短边
+ * @example
+ * // => 1920x1080
  */
 export function getResolution(): string {
   const ratio: number = devicePixelRatio || 1;

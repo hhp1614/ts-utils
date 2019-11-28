@@ -1,23 +1,28 @@
-import { getVersion, testUA } from './device.helper';
-import { IBrowserInfo, IBrowserInfoItem } from './device.types';
+import { getVersion, testUA } from './_internal/utils';
+import { IBrowserInfo, IBrowserInfoItem } from './_internal/types';
+import { getUA } from './getUA';
 
 /**
  * 获取浏览器信息
- * @param ua {string} userAgent
+ * @return IBrowserInfo.engine 内核
+ * @return IBrowserInfo.supporter 载体
+ * @return IBrowserInfo.shell 外壳
  */
-export function getBrowser(ua: string): IBrowserInfo {
+export function getBrowser(): IBrowserInfo {
+  // userAgent
+  const ua: string = getUA();
   // 内核
-  let engine: IBrowserInfoItem = {
+  const engine: IBrowserInfoItem = {
     type: 'unknown',
     version: 'unknown'
   };
   // 载体
-  let supporter: IBrowserInfoItem = {
+  const supporter: IBrowserInfoItem = {
     type: 'unknown',
     version: 'unknown'
   };
   // 外壳
-  let shell: IBrowserInfoItem = {
+  const shell: IBrowserInfoItem = {
     type: 'unknown',
     version: 'unknown'
   };

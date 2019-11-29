@@ -1,7 +1,7 @@
 module.exports = {
   title: 'ts-utils',
   description: 'ts-utils 文档',
-  // base: '/ts-utils/', // 部署到 github 相关的配置
+  base: '/ts-utils/', // 部署到 github 相关的配置
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],

@@ -15,7 +15,10 @@
     "start": "webpack-dev-server --config build/webpack.dev.ts",
     "test": "jest --verbose",
     "build": "webpack --config build/webpack.prod.ts",
-    "docs": "vuepress dev docs"
+    "docs": "vuepress dev docs",
+    "docs:build": "vuepress build docs && ts-node build/docs.ts",
+    "docs:bw": "ts-node build/docs.ts",
+    "docs:bu": "vuepress build docs && cp -rf ./docs/.vuepress/dist/* ./docs && rm -r ./docs/.vuepress/dist"
   },
   "author": "hhp1614",
   "private": false,
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "@types/clean-webpack-plugin": "^0.1.3",
+    "@types/fs-extra": "^8.0.1",
     "@types/html-webpack-plugin": "^3.2.1",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.11",
@@ -49,6 +53,7 @@
     "@types/webpack-dev-server": "^3.4.0",
     "@types/webpack-merge": "^4.1.5",
     "clean-webpack-plugin": "^3.0.0",
+    "fs-extra": "^8.1.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",

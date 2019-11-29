@@ -14,7 +14,7 @@ describe('type: isPlainObject', () => {
       }
     }
 
-    expect(isPlainObject(new Foo())).toBe(true);
+    expect(isPlainObject(new Foo())).toBe(false);
     expect(isPlainObject([1, 2, 3])).toBe(false);
   });
 });

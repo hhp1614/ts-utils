@@ -7,15 +7,6 @@ install:
 
 script:
   - yarn test
-  - vuepress build docs
-
-after_script:
-  - rm -rf ./docs/page/*
-  - cp -rf ./docs/.vuepress/dist/* ./docs/page
-  - rm -r ./docs/.vuepress/dist
-  - git add .
-  - git commit -m "build docs"
-  - git push
 
 branches:
   only:

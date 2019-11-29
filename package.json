@@ -15,8 +15,8 @@
     "start": "webpack-dev-server --config build/webpack.dev.ts",
     "test": "jest --verbose",
     "build": "webpack --config build/webpack.prod.ts",
-    "docs": "vuepress dev docs",
-    "docs:build": "vuepress build docs && ts-node build/docs.ts"
+    "docs": "vuepress dev vuepress",
+    "docs:build": "vuepress build vuepress && ts-node build/docs.ts"
   },
   "author": "hhp1614",
   "private": false,

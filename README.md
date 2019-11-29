@@ -1,6 +1,6 @@
 # ts-utils
 
-使用 typescript 开发的一个浏览器端工具库
+使用 TypeScript 开发的一个浏览器端工具库
 
 ## 安装
 
@@ -33,7 +33,7 @@ import { 模块名 } from '@hhp1614/utils';
 
 ## 模块
 
-- [设备方法](./docs/device.md)
-- [常用方法](./docs/func.md)
-- [类型检查方法](./docs/type.md)
+- [设备](./docs/device.md): 获取设备信息
+- [方法](./docs/func.md): 常用的方法
+- [类型](./docs/type.md): 判断类型的方法
 

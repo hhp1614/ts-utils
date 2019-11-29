@@ -2,8 +2,8 @@ import { isObjectLike } from './isObjectLike';
 import { isPlainObject } from './isPlainObject';
 
 /**
- * 检查是否为 DOM 元素
- * @param value 要检查的值
+ * 判断是否为 DOM 元素
+ * @param value 要判断的值
  * @example
  *
  * isElement(document.body);

@@ -6,7 +6,7 @@ import * as _type from './type';
 export const device = _device;
 // 常用方法
 export const func = _func;
-// 类型检查方法
+// 类型判断方法
 export const type = _type;
 
 export default {
@@ -14,6 +14,6 @@ export default {
   device: _device,
   // 常用方法
   func: _func,
-  // 类型检查方法
+  // 类型判断方法
   type: _type
 } as Object;

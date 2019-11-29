@@ -1,8 +1,8 @@
 import { getTag } from './_internal/getTag';
 
 /**
- * 检查是否为 Symbol 对象
- * @param value 要检查的值
+ * 判断是否为 Symbol 对象
+ * @param value 要判断的值
  * @example
  *
  * isSymbol(Symbol.iterator);

@@ -1,8 +1,8 @@
 import { getTag } from './_internal/getTag';
 
 /**
- * 检查是否为字符串或者字符串对象
- * @param value 要检查的值
+ * 判断是否为字符串或者字符串对象
+ * @param value 要判断的值
  * @example
  *
  * isString('abc');

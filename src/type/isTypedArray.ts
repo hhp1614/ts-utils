@@ -5,8 +5,8 @@ import { isObjectLike } from './isObjectLike';
 const reTypedTag = /^\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\]$/;
 
 /**
- * 检查是否为类型数组
- * @param value 要检查的值
+ * 判断是否为类型数组
+ * @param value 要判断的值
  * @example
  *
  * isTypedArray(new Uint8Array);

@@ -1,6 +1,6 @@
 /**
- * 检查是否为长度
- * @param value 要检查的值
+ * 判断是否为长度
+ * @param value 要判断的值
  * @example
  *
  * isLength(3);

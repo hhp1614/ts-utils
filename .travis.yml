@@ -1,0 +1,26 @@
+sudo: false
+language: node_js
+node_js: 'lts/*'
+
+install:
+  - yarn
+
+script:
+  - yarn test
+  - vuepress build docs
+
+after_script:
+  - cp -rf ./docs/.vuepress/dist/* ./docs
+  - rm -r ./docs/.vuepress/dist
+  - git add .
+  - git commit -m "build docs"
+  - git push
+
+branches:
+  only:
+    - master
+
+cache:
+  yarn: true
+  directories:
+    - node_modules

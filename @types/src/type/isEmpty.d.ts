@@ -1,6 +1,6 @@
 /**
- * 检查是否为空的对象，集合，Map 或者 Set 对象
- * @param value 要检查的值
+ * 判断是否为空的对象，集合，Map 或者 Set 对象
+ * @param value 要判断的值
  * @example
  *
  * isEmpty(null);

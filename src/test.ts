@@ -1,4 +1,3 @@
-import { device, func, type } from './main';
+import { device } from './main';
 
-console.log(device, func, type);
-console.log(type.isObject(1));
+console.log(device);

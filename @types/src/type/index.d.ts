@@ -21,5 +21,6 @@ export { isSet } from './isSet';
 export { isString } from './isString';
 export { isSymbol } from './isSymbol';
 export { isTypedArray } from './isTypedArray';
+export { isUndefined } from './isUndefined';
 export { isWeakMap } from './isWeakMap';
 export { isWeakSet } from './isWeakSet';

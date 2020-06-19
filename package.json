@@ -24,7 +24,7 @@
     "build": "rimraf ./lib && tsc -p tsconfig.json",
     "test": "jest --verbose",
     "docs": "vuepress dev vuepress",
-    "docs:build": "rimraf ./docs && vuepress build vuepress",
+    "docs:build": "rimraf ./docs && vuepress build vuepress --dest ./docs",
     "major": "npm version major -m \"Upgrade to %s\"",
     "minor": "npm version minor -m \"Upgrade to %s\"",
     "patch": "npm version patch -m \"Upgrade to %s\"",

@@ -18,7 +18,7 @@ import {
   isRegExp
 } from '../../../src/common/type';
 
-const args = (function() {
+const args = (function () {
   return arguments;
 })();
 
@@ -210,7 +210,7 @@ describe('common/type:getType', () => {
   test('isPlainObject()', () => {
     expect(isPlainObject({})).toBeTruthy();
     expect(isPlainObject({ a: 1 })).toBeTruthy();
-    expect(isPlainObject({ constructor: function() {} })).toBeTruthy();
+    expect(isPlainObject({ constructor: function () {} })).toBeTruthy();
 
     expect(isPlainObject([1, 2, 3])).toBeFalsy();
     expect(isPlainObject(new (class {})())).toBeFalsy();
@@ -232,7 +232,7 @@ describe('common/type:getType', () => {
 
     expect(isEmptyObject(new (class {})())).toBeFalsy();
     expect(isEmptyObject(new Date())).toBeFalsy();
-    expect(isEmptyObject({ constructor: function() {} })).toBeFalsy();
+    expect(isEmptyObject({ constructor: function () {} })).toBeFalsy();
     expect(isEmptyObject({ a: 1 })).toBeFalsy();
     expect(isEmptyObject([1, 2, 3])).toBeFalsy();
     expect(isEmptyObject(true)).toBeFalsy();
@@ -301,7 +301,7 @@ describe('common/type:getType', () => {
   });
 
   test('isFunction()', () => {
-    expect(isFunction(function() {})).toBeTruthy();
+    expect(isFunction(function () {})).toBeTruthy();
     expect(isFunction(() => {})).toBeTruthy();
     expect(isFunction(class {})).toBeTruthy();
     expect(isFunction(async () => {})).toBeTruthy();

@@ -22,7 +22,7 @@ describe('common/collection:each', () => {
     if (!dst.length) dst.length = src.length;
     expect(dst).toEqual(src);
 
-    (function(a: any, b: any, c: any, d: any) {
+    (function (a: any, b: any, c: any, d: any) {
       let i = 0;
       const args = arguments;
       each(arguments, (value, index) => {

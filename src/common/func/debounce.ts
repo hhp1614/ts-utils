@@ -18,7 +18,7 @@ export function debounce(func: Function, wait: number, immediate = false) {
 
   let timeout: any;
 
-  const debounced = function(...args: Array<any>) {
+  const debounced = function (...args: Array<any>) {
     if (timeout) {
       clearTimeout(timeout);
     }

@@ -25,7 +25,7 @@ export function throttle(func: Function, wait: number, options: { leading?: bool
   let timeout: any;
   let previous = 0;
 
-  const throttled = function(...args: Array<any>) {
+  const throttled = function (...args: Array<any>) {
     const now = Date.now();
     // leading：false 表示禁用第一次执行
     if (!previous && options.leading === false) previous = now;

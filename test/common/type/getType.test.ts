@@ -45,7 +45,7 @@ describe('common/type:getType', () => {
 
   test('getType(): function', () => {
     expect(getType(() => {})).toBe('function');
-    expect(getType(function() {})).toBe('function');
+    expect(getType(function () {})).toBe('function');
     expect(getType(class {})).toBe('function');
     expect(getType(new Function())).toBe('function');
     expect(getType(Function)).toBe('function');
@@ -63,7 +63,7 @@ describe('common/type:getType', () => {
   });
 
   test('getType(): date', () => {
-    const args = (function() {
+    const args = (function () {
       return arguments;
     })();
     expect(getType(args)).toBe('arguments');

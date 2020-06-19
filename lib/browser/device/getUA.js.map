@@ -1,0 +1,1 @@
+{"version":3,"file":"getUA.js","sourceRoot":"","sources":["../../../src/browser/device/getUA.ts"],"names":[],"mappings":";;;AAAA,SAAgB,KAAK;IACnB,OAAO,4BAA4B,CAAC;AACtC,CAAC;AAFD,sBAEC","sourcesContent":["export function getUA() {\n  return 'window.navigator.userAgent';\n}\n"]}

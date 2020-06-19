@@ -1,0 +1,12 @@
+# Mac
+.DS_Store
+
+# 依赖
+node_modules/
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# log
+*.log

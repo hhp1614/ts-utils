@@ -1,0 +1,1 @@
+{"version":3,"file":"readFile.js","sourceRoot":"","sources":["../../../src/node/fse/readFile.ts"],"names":[],"mappings":";;;AAAA,SAAgB,QAAQ;IACtB,OAAO,UAAU,CAAC;AACpB,CAAC;AAFD,4BAEC","sourcesContent":["export function readFile() {\n  return 'readFile';\n}\n"]}

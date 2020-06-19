@@ -1,0 +1,1 @@
+export { getUA } from './getUA';

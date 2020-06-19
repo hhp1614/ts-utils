@@ -1,8 +1,13 @@
 {
   "name": "@hhp1614/utils",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "使用 typescript 开发的一个函数工具库",
-  "keywords": ["utils", "common", "node", "browser"],
+  "keywords": [
+    "utils",
+    "common",
+    "node",
+    "browser"
+  ],
   "main": "lib/index.js",
   "author": "hhp1614<hhp1614@qq.com>",
   "license": "MIT",
@@ -10,7 +15,9 @@
     "type": "git",
     "url": "https://github.com/hhp1614/utils.git"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "private": false,
   "scripts": {
     "watch": "rimraf ./lib && tsc -w -p tsconfig.json",

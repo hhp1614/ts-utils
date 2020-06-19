@@ -8,7 +8,7 @@ import { isFunction, isNumber } from '../type';
  * @param wait 延迟执行的时间，单位毫秒
  * @param immediate 是否立即执行，默认 `false`
  */
-export function debounce(func: Function, wait: number, immediate: boolean = false) {
+export function debounce(func: Function, wait: number, immediate = false) {
   if (!isFunction(func)) {
     throw new TypeError('`func` 必须是函数');
   }

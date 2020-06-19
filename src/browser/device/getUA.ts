@@ -1,3 +1,9 @@
+import { isBrowser } from '../../common/type';
+
+/**
+ * 获取浏览器的 `userAgent`
+ */
 export function getUA() {
-  return 'window.navigator.userAgent';
+  isBrowser(true);
+  return window.navigator.userAgent;
 }

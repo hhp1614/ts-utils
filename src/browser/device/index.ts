@@ -1,1 +1,4 @@
-export { getUA } from './getUA';
+export * from './getBrowser';
+export * from './getOS';
+export * from './getUA';
+export * from './isEnv';

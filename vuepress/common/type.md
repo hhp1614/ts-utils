@@ -70,3 +70,24 @@ is[Type](value);
 import { isString } from '@hhp1614/utils/lib/common/type';
 isString(''); // true
 ```
+
+## check[Env] 判断环境
+
+判断环境是否为 `Env`
+
+```text
+check[Env]([throwError = false], [errorContent]);
+```
+
+- `check[Type]`：
+    - `checkBrowser`：判断当前环境是否为浏览器
+    - `checkNode`：判断当前环境是否为 NodeJS
+- 参数：
+    - `throwError`：是否抛出异常，默认 `false`
+    - `errorContent`：抛出异常时的错误内容
+- 返回值 `boolean`：是否为对应环境
+- 例子：
+```js
+import { checkBrowser } from '@hhp1614/utils/lib/common/type';
+checkBrowser(); // true
+```

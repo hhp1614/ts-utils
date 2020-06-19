@@ -50,7 +50,7 @@ export declare function isObject(value: any): boolean;
 export declare function isObjectLike(value: any): boolean;
 /**
  * 是否为普通对象
- * @description 由 Object 构造函数创建或者 [[Prototype]] 为空
+ * @description 由 `Object` 构造函数创建或者 `[[Prototype]]` 为空
  * @param value 任意值
  */
 export declare function isPlainObject(value: any): boolean;
@@ -71,7 +71,7 @@ export declare function isArray(value: any): boolean;
 export declare function isEmptyArray(value: any): boolean;
 /**
  * 是否为类数组
- * @description 类数组必定含有 length 属性，length 为 number 类型
+ * @description 类数组必定含有 `length` 属性，`length` 为 `number` 类型
  * @param value 任意值
  */
 export declare function isArrayLike(value: any): boolean;

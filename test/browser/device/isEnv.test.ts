@@ -1,5 +1,17 @@
 import os from 'os';
-import { isLinux, isWin, isMac } from '../../../src/browser/device';
+import {
+  isLinux,
+  isWin,
+  isMac,
+  isAndroid,
+  isWeChat,
+  isWeChatPC,
+  isWeChatMobile,
+  isWeChatIOS,
+  isWeChatAndroid,
+  isMobile,
+  isPC
+} from '../../../src/browser/device';
 
 describe('browser/device:isEnv', () => {
   test('isWin()', () => {
@@ -15,5 +27,37 @@ describe('browser/device:isEnv', () => {
   test('isMac()', () => {
     const result = os.type() === 'Darwin';
     expect(isMac()).toBe(result);
+  });
+
+  test('isAndroid', () => {
+    expect(isAndroid()).toBeFalsy();
+  });
+
+  test('isWeChat', () => {
+    expect(isWeChat()).toBeFalsy();
+  });
+
+  test('isWeChatPC', () => {
+    expect(isWeChatPC()).toBeFalsy();
+  });
+
+  test('isWeChatMobile', () => {
+    expect(isWeChatMobile()).toBeFalsy();
+  });
+
+  test('isWeChatIOS', () => {
+    expect(isWeChatIOS()).toBeFalsy();
+  });
+
+  test('isWeChatAndroid', () => {
+    expect(isWeChatAndroid()).toBeFalsy();
+  });
+
+  test('isMobile', () => {
+    expect(isMobile()).toBeFalsy();
+  });
+
+  test('isPC', () => {
+    expect(isPC()).toBeTruthy();
   });
 });

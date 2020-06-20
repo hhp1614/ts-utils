@@ -13,7 +13,7 @@ export const isLinux = () => /x11/i.test(getUA());
 /**
  * 是否为Mac环境
  */
-export const isMac = () => /macintosh|macintel/i.test(getUA());
+export const isMac = () => /macintosh|macintel|darwin/i.test(getUA());
 
 /**
  * 是否为iOS环境
@@ -53,9 +53,9 @@ export const isWeChatAndroid = () => isWeChat() && !isWeChatPC() && isAndroid();
 /**
  * 是否为移动端环境
  */
-export const isMobile = isAndroid() || isIOS() || /mobile/i.test(getUA());
+export const isMobile = () => isAndroid() || isIOS() || /mobile/i.test(getUA());
 
 /**
  * 是否为PC端环境
  */
-export const isPC = isWin() || isLinux() || isMac();
+export const isPC = () => isWin() || isLinux() || isMac();

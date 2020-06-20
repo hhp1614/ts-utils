@@ -41,9 +41,9 @@ export declare const isWeChatAndroid: () => boolean;
 /**
  * 是否为移动端环境
  */
-export declare const isMobile: boolean;
+export declare const isMobile: () => boolean;
 /**
  * 是否为PC端环境
  */
-export declare const isPC: boolean;
+export declare const isPC: () => boolean;
 //# sourceMappingURL=isEnv.d.ts.map

@@ -20,8 +20,8 @@
   ],
   "private": false,
   "scripts": {
-    "watch": "npm run lint && rimraf ./lib && tsc -w -p tsconfig.json",
-    "build": "npm run lint && rimraf ./lib && tsc -p tsconfig.json",
+    "watch": "rimraf ./lib && npm run lint && tsc -w -p tsconfig.json",
+    "build": "rimraf ./lib && tsc -p tsconfig.json && npm run lint",
     "format": "prettier --write {src,test}/**/*.ts vuepress/**/*.js",
     "lint": "eslint {src,test,vuepress/.vuepress} --fix --ext .ts,.js",
     "test": "npm run lint && jest --verbose",

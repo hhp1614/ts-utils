@@ -1,4 +1,4 @@
-# device 方法
+# device 设备
 
 ### 引入
 

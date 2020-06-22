@@ -1,4 +1,4 @@
-import os from 'os';
+const os = require('os');
 import { getUA } from '../../../src/browser/device';
 
 describe('browser/device:getUA', () => {

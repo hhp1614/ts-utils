@@ -23,7 +23,7 @@
     "watch": "rimraf ./lib && npm run lint && tsc -w -p tsconfig.json",
     "build": "rimraf ./lib && tsc -p tsconfig.json && npm run lint",
     "format": "prettier --write {src,test}/**/*.ts vuepress/**/*.js",
-    "lint": "eslint {src,test,vuepress/.vuepress} --fix --ext .ts,.js",
+    "lint": "eslint --fix --ext .ts,.js src/ test/ vuepress/.vuepress",
     "test": "npm run lint && jest --verbose",
     "docs": "vuepress dev vuepress",
     "docs:build": "npm run lint && rimraf ./docs && vuepress build vuepress --dest ./docs",

@@ -15,9 +15,6 @@
     "type": "git",
     "url": "https://github.com/hhp1614/utils.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "files": [
     "lib"
   ],
@@ -28,8 +25,8 @@
     "format": "prettier --write {src,test}/**/*.ts vuepress/**/*.js",
     "lint": "eslint --fix --ext .ts,.js src/ test/ vuepress/.vuepress",
     "test": "npm run lint && jest --verbose",
-    "docs": "vuepress dev vuepress",
-    "docs:build": "npm run lint && rimraf ./docs && vuepress build vuepress --dest ./docs",
+    "docs:dev": "vuepress dev vuepress",
+    "docs": "npm run lint && rimraf ./docs && vuepress build vuepress --dest ./docs",
     "major": "npm version major -m \"Upgrade to %s\"",
     "minor": "npm version minor -m \"Upgrade to %s\"",
     "patch": "npm version patch -m \"Upgrade to %s\"",

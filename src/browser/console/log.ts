@@ -44,7 +44,7 @@ export class Log {
    * @param args 任意值
    */
   static fail(...args: any[]) {
-    console.warn(Log.prefix + level.fail, ...args);
+    console.error(Log.prefix + level.fail, ...args);
   }
 
   /**

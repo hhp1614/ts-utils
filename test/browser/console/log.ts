@@ -1,4 +1,4 @@
-import { Log } from '../../../src/browser/console/log';
+import { Log } from '../../../src/browser/console';
 
 describe('browser/console:log', () => {
   test('Log:info', () => {

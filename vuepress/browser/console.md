@@ -10,7 +10,7 @@ import * as console from '@hhp1614/utils/lib/common/console';
 import { console } from '@hhp1614/utils/lib/common';
 
 // 使用
-type.fn();
+console.fn();
 
 
 import { fn } from '@hhp1614/utils/lib/common/console';

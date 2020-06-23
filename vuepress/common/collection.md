@@ -10,7 +10,7 @@ import * as collection from '@hhp1614/utils/lib/common/collection';
 import { collection } from '@hhp1614/utils/lib/common';
 
 // 使用
-type.fn();
+collection.fn();
 
 
 import { fn } from '@hhp1614/utils/lib/common/collection';

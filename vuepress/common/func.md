@@ -10,7 +10,7 @@ import * as func from '@hhp1614/utils/lib/common/func';
 import { func } from '@hhp1614/utils/lib/common';
 
 // 使用
-type.fn();
+func.fn();
 
 
 import { fn } from '@hhp1614/utils/lib/common/func';

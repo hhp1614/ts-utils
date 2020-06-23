@@ -10,7 +10,7 @@ import * as device from '@hhp1614/utils/lib/common/device';
 import { device } from '@hhp1614/utils/lib/common';
 
 // 使用
-type.fn();
+device.fn();
 
 
 import { fn } from '@hhp1614/utils/lib/common/device';

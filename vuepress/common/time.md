@@ -10,7 +10,7 @@ import * as time from '@hhp1614/utils/lib/common/time';
 import { time } from '@hhp1614/utils/lib/common';
 
 // 使用
-type.fn();
+time.fn();
 
 
 import { fn } from '@hhp1614/utils/lib/common/time';

@@ -1,9 +1,35 @@
-const level = {
+type Level = {
+  info: string;
+  error: string;
+  success: string;
+  fail: string;
+  debug: string;
+};
+
+/**
+ * 打印等级
+ */
+const level: Level = {
   info: '[info]', // 提示
   error: '[error]', // 报错
   success: '[success]', // 成功
   fail: '[fail]', // 失败
   debug: '[debug]' // 调试
+};
+
+/**
+ * 根据打印等级获取打印样式
+ * @param level 打印等级
+ */
+const getStyle = (level: keyof Level) => {
+  const color: Level = {
+    info: '#3190e8',
+    error: '#E83131',
+    success: '#4ce831',
+    fail: '#e231e8',
+    debug: '#e89631'
+  };
+  return `color: ${color[level]}; font-size: 16px; font-family: JetBrains Mono Medium, sans-serif`;
 };
 
 /**
@@ -28,7 +54,7 @@ export class Log {
    * @param args 任意值
    */
   static info(...args: any[]) {
-    console.warn(this.prefix + level.info, ...args);
+    console.info('%c' + this.prefix + level.info, getStyle('info'), ...args);
   }
 
   /**
@@ -36,7 +62,7 @@ export class Log {
    * @param args 任意值
    */
   static error(...args: any[]) {
-    console.error(Log.prefix + level.error, ...args);
+    console.error('%c' + this.prefix + level.error, getStyle('error'), ...args);
   }
 
   /**
@@ -44,7 +70,7 @@ export class Log {
    * @param args 任意值
    */
   static success(...args: any[]) {
-    console.warn(this.prefix + level.success, ...args);
+    console.info('%c' + this.prefix + level.success, getStyle('success'), ...args);
   }
 
   /**
@@ -52,7 +78,7 @@ export class Log {
    * @param args 任意值
    */
   static fail(...args: any[]) {
-    console.error(this.prefix + level.fail, ...args);
+    console.error('%c' + this.prefix + level.fail, getStyle('fail'), ...args);
   }
 
   /**
@@ -60,6 +86,6 @@ export class Log {
    * @param args 任意值
    */
   static debug(...args: any[]) {
-    console.warn(this.prefix + level.debug, ...args);
+    console.warn('%c' + this.prefix + level.debug, getStyle('debug'), ...args);
   }
 }

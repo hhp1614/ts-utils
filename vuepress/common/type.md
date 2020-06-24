@@ -1,24 +1,5 @@
 # type 类型
 
-### 引入
-
-> 注：`fn` 为需要使用的方法名
-
-```js
-import * as type from '@hhp1614/utils/lib/common/type';
-// or
-import { type } from '@hhp1614/utils/lib/common';
-
-// 使用
-type.fn();
-
-
-import { fn } from '@hhp1614/utils/lib/common/type';
-// 单独引入方法
-// import { fn } from '@hhp1614/utils/lib/common/type/fn';
-fn();
-```
-
 ## getType 判断数据类型
 
 获取 `value` 的类型，底层使用 `Object.prototype.toString.call`

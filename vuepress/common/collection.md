@@ -1,24 +1,5 @@
 # collection 集合
 
-### 引入
-
-> 注：`fn` 为需要使用的方法名
-
-```js
-import * as collection from '@hhp1614/utils/lib/common/collection';
-// or
-import { collection } from '@hhp1614/utils/lib/common';
-
-// 使用
-collection.fn();
-
-
-import { fn } from '@hhp1614/utils/lib/common/collection';
-// 单独引入方法
-// import { fn } from '@hhp1614/utils/lib/common/collection/fn';
-fn();
-```
-
 ## each 遍历
 
 遍历数组，类数组，字符串，对象

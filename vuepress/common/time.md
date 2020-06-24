@@ -1,24 +1,5 @@
 # time 时间
 
-### 引入
-
-> 注：`fn` 为需要使用的方法名
-
-```js
-import * as time from '@hhp1614/utils/lib/common/time';
-// or
-import { time } from '@hhp1614/utils/lib/common';
-
-// 使用
-time.fn();
-
-
-import { fn } from '@hhp1614/utils/lib/common/time';
-// 单独引入方法
-// import { fn } from '@hhp1614/utils/lib/common/time/fn';
-fn();
-```
-
 ## timeFormat 时间格式化
 
 ```text

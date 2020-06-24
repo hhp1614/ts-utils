@@ -5,7 +5,12 @@ export declare class Log {
     /**
      * 前缀
      */
-    static prefix: string;
+    private static prefix;
+    /**
+     * 设置前缀
+     * @param prefix 前缀
+     */
+    static setPrefix(prefix: string): void;
     /**
      * 打印信息
      * @param args 任意值

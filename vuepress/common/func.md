@@ -1,24 +1,5 @@
 # func 方法
 
-### 引入
-
-> 注：`fn` 为需要使用的方法名
-
-```js
-import * as func from '@hhp1614/utils/lib/common/func';
-// or
-import { func } from '@hhp1614/utils/lib/common';
-
-// 使用
-func.fn();
-
-
-import { fn } from '@hhp1614/utils/lib/common/func';
-// 单独引入方法
-// import { fn } from '@hhp1614/utils/lib/common/func/fn';
-fn();
-```
-
 ## debounce 函数防抖
 
 限制事件的频繁触发

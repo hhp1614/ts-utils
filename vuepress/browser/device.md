@@ -1,24 +1,5 @@
 # device 设备
 
-### 引入
-
-> 注：`fn` 为需要使用的方法名
-
-```js
-import * as device from '@hhp1614/utils/lib/common/device';
-// or
-import { device } from '@hhp1614/utils/lib/common';
-
-// 使用
-device.fn();
-
-
-import { fn } from '@hhp1614/utils/lib/common/device';
-// 单独引入方法
-// import { fn } from '@hhp1614/utils/lib/common/device/fn';
-fn();
-```
-
 ## getUA 获取UA
 
 获取浏览器的 `userAgent`

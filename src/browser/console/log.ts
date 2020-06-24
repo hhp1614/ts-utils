@@ -13,14 +13,22 @@ export class Log {
   /**
    * 前缀
    */
-  static prefix = '';
+  private static prefix = '';
+
+  /**
+   * 设置前缀
+   * @param prefix 前缀
+   */
+  static setPrefix(prefix: string) {
+    this.prefix = prefix === '' ? '' : `[${prefix}]`;
+  }
 
   /**
    * 打印信息
    * @param args 任意值
    */
   static info(...args: any[]) {
-    console.warn(Log.prefix + level.info, ...args);
+    console.warn(this.prefix + level.info, ...args);
   }
 
   /**
@@ -36,7 +44,7 @@ export class Log {
    * @param args 任意值
    */
   static success(...args: any[]) {
-    console.warn(Log.prefix + level.success, ...args);
+    console.warn(this.prefix + level.success, ...args);
   }
 
   /**
@@ -44,7 +52,7 @@ export class Log {
    * @param args 任意值
    */
   static fail(...args: any[]) {
-    console.error(Log.prefix + level.fail, ...args);
+    console.error(this.prefix + level.fail, ...args);
   }
 
   /**
@@ -52,6 +60,6 @@ export class Log {
    * @param args 任意值
    */
   static debug(...args: any[]) {
-    console.warn(Log.prefix + level.debug, ...args);
+    console.warn(this.prefix + level.debug, ...args);
   }
 }

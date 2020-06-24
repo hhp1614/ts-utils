@@ -1,5 +1,11 @@
 # 更新日志
 
+### v2.0.5
+- `browser` 下增加 `storage` 模块，增加 `localStorage` 和 `sessionStorage` 操作类
+
+### v2.0.4
+- 修复 `browser` 中 `console` 模块内的方法的引用问题
+
 ### v2.0.3
 - `common` 下增加 `object` 模块，增加深拷贝方法
 

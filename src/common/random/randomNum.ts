@@ -8,10 +8,10 @@ import { isNumber } from '../type';
  */
 export function randomNum(min: number, max: number) {
   if (!isNumber(min)) {
-    throw new TypeError('`min` 应该为数字');
+    throw new TypeError('`min` 必须是数字');
   }
   if (!isNumber(max)) {
-    throw new TypeError('`max` 应该为数字');
+    throw new TypeError('`max` 必须是数字');
   }
 
   // 去掉小数部分

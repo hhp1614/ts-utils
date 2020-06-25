@@ -16,13 +16,13 @@ describe('common/random:randomNum', () => {
   test('randomNum():min', () => {
     // @ts-ignore
     const fn = () => randomNum('10', 20);
-    expect(fn).toThrow('`min` 应该为数字');
+    expect(fn).toThrow('`min` 必须是数字');
   });
 
   test('randomNum():max', () => {
     // @ts-ignore
     const fn = () => randomNum(10, '20');
-    expect(fn).toThrow('`max` 应该为数字');
+    expect(fn).toThrow('`max` 必须是数字');
   });
 
   test('randomNum():min < max', () => {

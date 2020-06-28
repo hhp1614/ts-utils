@@ -1,5 +1,8 @@
 # 更新日志
 
+### v2.0.6
+- `common/random` 模块下增加 `randomNum` 和 `randomColor` 方法
+
 ### v2.0.5
 - `browser` 下增加 `storage` 模块，增加 `localStorage` 和 `sessionStorage` 操作类
 

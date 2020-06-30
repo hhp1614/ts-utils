@@ -35,3 +35,15 @@ console.log(x); // #ffffff
 const y = randomColor('all', 'rgb');
 console.log(y); // rgb(255, 255, 255)
 ```
+
+## uuid 生成UUID
+
+随机生成 UUID
+
+- 返回值 `string`：`xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx` x 为十六进制数（0-f）
+- 例子：
+```js
+import { uuid } from '@hhp1614/utils/lib/common/random';
+const x = uuid();
+console.log(x); // 03de6fa1-ac81-4923-b88f-93683c653280
+```

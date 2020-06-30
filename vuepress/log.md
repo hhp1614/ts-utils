@@ -1,5 +1,8 @@
 # 更新日志
 
+### v2.0.7
+- `common/random` 模块下增加 `uuid` 方法
+
 ### v2.0.6
 - `common/random` 模块下增加 `randomNum` 和 `randomColor` 方法
 

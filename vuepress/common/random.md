@@ -23,6 +23,10 @@ console.log(x); // x >= 10 && x <= 20
 
 随机十六进制颜色或 RGB 颜色
 
+```text
+randomColor([mode=all], [type=hex])
+```
+
 - 参数：
     - `mode`：默认 `all`；`all` 全部颜色中随机，`light` 随机亮色，`dark` 随机暗色
     - `type`：默认 `hex`；`hex` 十六进制，`rgb` RGB
@@ -39,6 +43,10 @@ console.log(y); // rgb(255, 255, 255)
 ## uuid 生成UUID
 
 随机生成 UUID
+
+```text
+uuid()
+```
 
 - 返回值 `string`：`xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx` x 为十六进制数（0-f）
 - 例子：

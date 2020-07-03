@@ -7,8 +7,8 @@ timeFormat([time = new Date()], [format = 'YYYY-MM-DD hh:mm:ss']);
 ```
 
 - 参数：
-    - `time`：时间对象、时间戳、可转换为时间对象字符串，默认：`new Date()`
-    - `format`：格式，默认：`YYYY-MM-DD hh:mm:ss`
+    - `time`：默认：`new Date()`，时间对象、时间戳、可转换为时间对象的字符串
+    - `format`：默认：`YYYY-MM-DD hh:mm:ss`，显示格式
 - 格式说明：
     - `YY`：两位数的年份
     - `YYYY`：四位数的年份

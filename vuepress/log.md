@@ -1,5 +1,9 @@
 # 更新日志
 
+### v2.0.8
+- 增加 `common/math` 模块
+- `common/math` 模块下增加 `formatThousands`、`add`、`multiply`、`divide`、`round` 方法
+
 ### v2.0.7
 - `common/random` 模块下增加 `uuid` 方法
 

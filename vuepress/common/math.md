@@ -1,4 +1,4 @@
-# math 方法
+# math 数学
 
 ## formatThousands 数字千分位格式化
 

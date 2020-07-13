@@ -12,7 +12,7 @@ after_script:
   - cd ./docs
   - git init
   - git config user.name "hhp1614" # 修改 name
-  - git config user.email "hhp1614@gmail.com" # 修改 email
+  - git config user.email "hhp1614@qq.com" # 修改 email
   - git add .
   - git commit -m "update"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages # GH_TOKEN 是在 Travis 中配置 token 的名称

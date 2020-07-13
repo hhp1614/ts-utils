@@ -1,0 +1,30 @@
+language: node_js # 设置语言
+
+node_js: 'lts/*' # 设置相应的版本
+
+install:
+  - yarn # 安装依赖
+
+script:
+  - yarn docs
+
+after_script:
+  - cd ./docs
+  - git init
+  - git config user.name "hhp1614" # 修改 name
+  - git config user.email "hhp1614@gmail.com" # 修改 email
+  - git add .
+  - git commit -m "update"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages # GH_TOKEN 是在 Travis 中配置 token 的名称
+
+branches:
+  only:
+    - master # 只监测 master 分支
+env:
+  global:
+    - GH_REF: github.com/hhp1614/utils # 设置 GH_REF，注意更改 yourname
+
+cache:
+  yarn: true
+  directories:
+    - node_modules

@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/console/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,wCAAsB","sourcesContent":["export * from './log';\r\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/console/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,wCAAsB","sourcesContent":["export * from './log';\n"]}

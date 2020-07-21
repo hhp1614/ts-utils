@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/device/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAwB;AACxB,0CAAwB","sourcesContent":["export * from './getUA';\r\nexport * from './isEnv';\r\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/device/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAwB;AACxB,0CAAwB","sourcesContent":["export * from './getUA';\nexport * from './isEnv';\n"]}

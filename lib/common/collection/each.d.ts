@@ -1,6 +1,6 @@
 interface ArrayLike<T> {
-  readonly length: number;
-  readonly [n: number]: T;
+    readonly length: number;
+    readonly [n: number]: T;
 }
 /**
  * 遍历数组

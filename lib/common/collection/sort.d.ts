@@ -1,7 +1,7 @@
 declare type Item = string | number | Obj;
 declare type Arr = Array<Item>;
 declare type Obj = {
-  [key: string]: any;
+    [key: string]: any;
 };
 declare type ArrayOrObject = Arr | Obj;
 /**

@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/node/fse/index.ts"],"names":[],"mappings":";;AAAA,uCAAsC;AAA7B,oGAAA,QAAQ,OAAA","sourcesContent":["export { readFile } from './readFile';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/node/fse/index.ts"],"names":[],"mappings":";;AAAA,uCAAsC;AAA7B,oGAAA,QAAQ,OAAA","sourcesContent":["export { readFile } from './readFile';\r\n"]}

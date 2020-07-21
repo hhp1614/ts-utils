@@ -11,18 +11,21 @@ interface ArrayLike<T> {
  * @param callback 回调函数
  */
 export function each<T>(collection: T[], callback: (value: T, index: number) => void): void;
+
 /**
  * 遍历字符串
  * @param collection 需要遍历的字符串
  * @param callback 回调函数
  */
 export function each(collection: string, callback: (value: string, index: number) => void): void;
+
 /**
  * 遍历类数组
  * @param collection 需要遍历的类数组
  * @param callback 回调函数
  */
 export function each<T>(collection: ArrayLike<T>, callback: (value: T, index: number) => void): void;
+
 /**
  * 遍历对象
  * @param collection 需要遍历的对象

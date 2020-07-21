@@ -9,14 +9,18 @@
  * @param options.leading 如果想禁用第一次首先执行的话，传递 `{ leading: false }`
  * @param options.trailing 如果想禁用最后一次执行的话，传递 `{ trailing: false }`
  */
-export declare function throttle(func: Function, wait: number, options?: {
+export declare function throttle(
+  func: Function,
+  wait: number,
+  options?: {
     leading?: boolean;
     trailing?: boolean;
-}): {
-    (...args: Array<any>): void;
-    /**
-     * 取消节流
-     */
-    cancel(): void;
+  }
+): {
+  (...args: Array<any>): void;
+  /**
+   * 取消节流
+   */
+  cancel(): void;
 };
 //# sourceMappingURL=throttle.d.ts.map

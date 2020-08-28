@@ -1,16 +1,16 @@
-import { getType } from './getType';
+import { getType } from './getType'
 
 /**
  * 数组最大长度
  */
-const MAX_ARRAY_LENGTH = Math.pow(2, 32) - 1;
+const MAX_ARRAY_LENGTH = Math.pow(2, 32) - 1
 
 /**
  * 是否为字符串
  * @param value 任意值
  */
 export function isString(value: any) {
-  return getType(value) === 'string';
+  return getType(value) === 'string'
 }
 
 /**
@@ -18,7 +18,7 @@ export function isString(value: any) {
  * @param value 任意值
  */
 export function isNumber(value: any) {
-  return getType(value) === 'number';
+  return getType(value) === 'number'
 }
 
 /**
@@ -26,7 +26,7 @@ export function isNumber(value: any) {
  * @param value 任意值
  */
 export function isBoolean(value: any) {
-  return getType(value) === 'boolean';
+  return getType(value) === 'boolean'
 }
 
 /**
@@ -34,7 +34,7 @@ export function isBoolean(value: any) {
  * @param value 任意值
  */
 export function isNull(value: any) {
-  return getType(value) === 'null';
+  return getType(value) === 'null'
 }
 
 /**
@@ -42,7 +42,7 @@ export function isNull(value: any) {
  * @param value 任意值
  */
 export function isUndefined(value: any) {
-  return getType(value) === 'undefined';
+  return getType(value) === 'undefined'
 }
 
 /**
@@ -50,7 +50,7 @@ export function isUndefined(value: any) {
  * @param value
  */
 export function isNil(value: any) {
-  return value == null;
+  return value == null
 }
 
 /**
@@ -58,7 +58,7 @@ export function isNil(value: any) {
  * @param value 任意值
  */
 export function isSymbol(value: any) {
-  return getType(value) === 'symbol';
+  return getType(value) === 'symbol'
 }
 
 /**
@@ -66,7 +66,7 @@ export function isSymbol(value: any) {
  * @param value 任意值
  */
 export function isBigInt(value: any) {
-  return getType(value) === 'bigint';
+  return getType(value) === 'bigint'
 }
 
 /**
@@ -74,8 +74,8 @@ export function isBigInt(value: any) {
  * @param value 任意值
  */
 export function isObject(value: any) {
-  const type = typeof value;
-  return type != null && (type === 'object' || type === 'function');
+  const type = typeof value
+  return type != null && (type === 'object' || type === 'function')
 }
 
 /**
@@ -83,7 +83,7 @@ export function isObject(value: any) {
  * @param value 任意值
  */
 export function isObjectLike(value: any) {
-  return typeof value === 'object' && value !== null;
+  return typeof value === 'object' && value !== null
 }
 
 /**
@@ -93,16 +93,16 @@ export function isObjectLike(value: any) {
  */
 export function isPlainObject(value: any) {
   if (!isObjectLike(value) || getType(value) !== 'object') {
-    return false;
+    return false
   }
   if (Object.getPrototypeOf(value) === null) {
-    return true;
+    return true
   }
-  let proto = value;
+  let proto = value
   while (Object.getPrototypeOf(proto) !== null) {
-    proto = Object.getPrototypeOf(proto);
+    proto = Object.getPrototypeOf(proto)
   }
-  return Object.getPrototypeOf(value) === proto;
+  return Object.getPrototypeOf(value) === proto
 }
 
 /**
@@ -110,7 +110,7 @@ export function isPlainObject(value: any) {
  * @param value 任意值
  */
 export function isEmptyObject(value: any) {
-  return isPlainObject(value) && Object.keys(value).length === 0;
+  return isPlainObject(value) && Object.keys(value).length === 0
 }
 
 /**
@@ -118,7 +118,7 @@ export function isEmptyObject(value: any) {
  * @param value 任意值
  */
 export function isArray(value: any) {
-  return Array.isArray(value);
+  return Array.isArray(value)
 }
 
 /**
@@ -126,7 +126,7 @@ export function isArray(value: any) {
  * @param value 任意值
  */
 export function isEmptyArray(value: any) {
-  return isArray(value) && value.length === 0;
+  return isArray(value) && value.length === 0
 }
 
 /**
@@ -135,11 +135,11 @@ export function isEmptyArray(value: any) {
  * @param value 任意值
  */
 export function isArrayLike(value: any) {
-  const length = value?.length;
+  const length = value?.length
   if (length == null || isFunction(value)) {
-    return false;
+    return false
   }
-  return typeof length === 'number' && length >= 0 && length <= MAX_ARRAY_LENGTH;
+  return typeof length === 'number' && length >= 0 && length <= MAX_ARRAY_LENGTH
 }
 
 /**
@@ -147,7 +147,7 @@ export function isArrayLike(value: any) {
  * @param value 任意值
  */
 export function isFunction(value: any) {
-  return typeof value === 'function';
+  return typeof value === 'function'
 }
 
 /**
@@ -155,5 +155,5 @@ export function isFunction(value: any) {
  * @param value 任意值
  */
 export function isRegExp(value: any) {
-  return getType(value) === 'regexp';
+  return getType(value) === 'regexp'
 }

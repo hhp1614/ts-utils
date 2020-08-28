@@ -1,3 +1,3 @@
-export * from './randomNum';
-export * from './randomColor';
-export * from './uuid';
+export * from './randomNum'
+export * from './randomColor'
+export * from './uuid'

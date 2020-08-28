@@ -1,1 +1,1 @@
-export * as device from './device';
+export * as device from './device'

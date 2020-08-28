@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/storage/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAwB;AACxB,4CAA0B","sourcesContent":["export * from './local';\nexport * from './session';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/storage/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAuB;AACvB,4CAAyB","sourcesContent":["export * from './local'\nexport * from './session'\n"]}

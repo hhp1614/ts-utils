@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/common/object/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAwB","sourcesContent":["export * from './clone';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/common/object/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,0CAAuB","sourcesContent":["export * from './clone'\n"]}

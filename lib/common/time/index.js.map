@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/common/time/index.ts"],"names":[],"mappings":";;AAAA,2CAA0C;AAAjC,wGAAA,UAAU,OAAA","sourcesContent":["export { timeFormat } from './timeFormat';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/common/time/index.ts"],"names":[],"mappings":";;AAAA,2CAAyC;AAAhC,wGAAA,UAAU,OAAA","sourcesContent":["export { timeFormat } from './timeFormat'\n"]}

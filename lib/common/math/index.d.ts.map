@@ -1,1 +1,1 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/common/math/index.ts"],"names":[],"mappings":"AAAA,cAAc,mBAAmB,CAAC;AAClC,cAAc,OAAO,CAAC;AACtB,cAAc,YAAY,CAAC;AAC3B,cAAc,UAAU,CAAC;AACzB,cAAc,SAAS,CAAC"}
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/common/math/index.ts"],"names":[],"mappings":"AAAA,cAAc,mBAAmB,CAAA;AACjC,cAAc,OAAO,CAAA;AACrB,cAAc,YAAY,CAAA;AAC1B,cAAc,UAAU,CAAA;AACxB,cAAc,SAAS,CAAA"}

@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/node/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;AAAA,6CAA6B","sourcesContent":["export * as fse from './fse';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/node/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;AAAA,6CAA4B","sourcesContent":["export * as fse from './fse'\n"]}

@@ -29,7 +29,7 @@ const getStyle = (level: keyof Level) => {
     fail: '#e231e8',
     debug: '#e89631'
   }
-  return `color: ${color[level]}; font-size: 16px; font-family: JetBrains Mono Medium, sans-serif`
+  return `color: ${color[level]}`
 }
 
 /**

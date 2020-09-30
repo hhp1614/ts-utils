@@ -1,2 +1,2 @@
-export * from './getUA'
-export * from './isEnv'
+export * from './getUA';
+export * from './isEnv';

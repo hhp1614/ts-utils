@@ -1,2 +1,2 @@
-export * from './each'
-export * from './sort'
+export * from './each';
+export * from './sort';

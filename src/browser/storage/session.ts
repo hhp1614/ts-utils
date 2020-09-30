@@ -2,7 +2,7 @@
  * 转换为大写
  * @param str 需要转换的字符串
  */
-const upCase = (str: string) => str.toUpperCase()
+const upCase = (str: string) => str.toUpperCase();
 
 /**
  * sessionStorage 操作类
@@ -11,14 +11,14 @@ export class Session {
   /**
    * 前缀
    */
-  private static prefix = ''
+  private static prefix = '';
 
   /**
    * 设置前缀
    * @param prefix 前缀
    */
   static setPrefix(prefix: string) {
-    this.prefix = prefix === '' ? '' : `${prefix}_`
+    this.prefix = prefix === '' ? '' : `${prefix}_`;
   }
 
   /**
@@ -27,9 +27,9 @@ export class Session {
    */
   static get(key: string) {
     try {
-      return JSON.parse(<string>sessionStorage.getItem(upCase(this.prefix + key)))
+      return JSON.parse(<string>sessionStorage.getItem(upCase(this.prefix + key)));
     } catch {
-      return null
+      return null;
     }
   }
 
@@ -40,10 +40,10 @@ export class Session {
    */
   static set(key: string, value: any) {
     try {
-      sessionStorage.setItem(upCase(this.prefix + key), JSON.stringify(value))
-      return true
+      sessionStorage.setItem(upCase(this.prefix + key), JSON.stringify(value));
+      return true;
     } catch {
-      return false
+      return false;
     }
   }
 
@@ -53,10 +53,10 @@ export class Session {
    */
   static remove(key: string) {
     try {
-      sessionStorage.removeItem(upCase(this.prefix + key))
-      return true
+      sessionStorage.removeItem(upCase(this.prefix + key));
+      return true;
     } catch {
-      return false
+      return false;
     }
   }
 
@@ -65,10 +65,10 @@ export class Session {
    */
   static clear() {
     try {
-      sessionStorage.clear()
-      return true
+      sessionStorage.clear();
+      return true;
     } catch {
-      return false
+      return false;
     }
   }
 }

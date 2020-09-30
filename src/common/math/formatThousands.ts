@@ -1,4 +1,4 @@
-import { isNumber, isString } from '../type'
+import { isNumber, isString } from '../type';
 
 /**
  * 数字千分位格式化
@@ -7,7 +7,7 @@ import { isNumber, isString } from '../type'
  */
 export function formatThousands(num: number | string) {
   if (!isNumber(num) && !isString(num)) {
-    throw new TypeError('`num` 必须是数字或字符串')
+    throw new TypeError('`num` 必须是数字或字符串');
   }
-  return String(num).replace(/(?<=(^|\s)-?\d+)(?=(\d{3})+\b)/g, ',')
+  return String(num).replace(/(?<=(^|\s)-?\d+)(?=(\d{3})+\b)/g, ',');
 }

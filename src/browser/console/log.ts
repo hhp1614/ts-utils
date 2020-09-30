@@ -1,10 +1,10 @@
 type Level = {
-  info: string
-  error: string
-  success: string
-  fail: string
-  debug: string
-}
+  info: string;
+  error: string;
+  success: string;
+  fail: string;
+  debug: string;
+};
 
 /**
  * 打印等级
@@ -15,7 +15,7 @@ const level: Level = {
   success: '[success]', // 成功
   fail: '[fail]', // 失败
   debug: '[debug]' // 调试
-}
+};
 
 /**
  * 根据打印等级获取打印样式
@@ -28,9 +28,9 @@ const getStyle = (level: keyof Level) => {
     success: '#4ce831',
     fail: '#e231e8',
     debug: '#e89631'
-  }
-  return `color: ${color[level]}`
-}
+  };
+  return `color: ${color[level]}`;
+};
 
 /**
  * 日志打印类
@@ -39,14 +39,14 @@ export class Log {
   /**
    * 前缀
    */
-  private static prefix = ''
+  private static prefix = '';
 
   /**
    * 设置前缀
    * @param prefix 前缀
    */
   static setPrefix(prefix: string) {
-    this.prefix = prefix === '' ? '' : `[${prefix}]`
+    this.prefix = prefix === '' ? '' : `[${prefix}]`;
   }
 
   /**
@@ -54,7 +54,7 @@ export class Log {
    * @param args 任意值
    */
   static info(...args: any[]) {
-    console.info('%c' + this.prefix + level.info, getStyle('info'), ...args)
+    console.info('%c' + this.prefix + level.info, getStyle('info'), ...args);
   }
 
   /**
@@ -62,7 +62,7 @@ export class Log {
    * @param args 任意值
    */
   static error(...args: any[]) {
-    console.error('%c' + this.prefix + level.error, getStyle('error'), ...args)
+    console.error('%c' + this.prefix + level.error, getStyle('error'), ...args);
   }
 
   /**
@@ -70,7 +70,7 @@ export class Log {
    * @param args 任意值
    */
   static success(...args: any[]) {
-    console.info('%c' + this.prefix + level.success, getStyle('success'), ...args)
+    console.info('%c' + this.prefix + level.success, getStyle('success'), ...args);
   }
 
   /**
@@ -78,7 +78,7 @@ export class Log {
    * @param args 任意值
    */
   static fail(...args: any[]) {
-    console.error('%c' + this.prefix + level.fail, getStyle('fail'), ...args)
+    console.error('%c' + this.prefix + level.fail, getStyle('fail'), ...args);
   }
 
   /**
@@ -86,6 +86,6 @@ export class Log {
    * @param args 任意值
    */
   static debug(...args: any[]) {
-    console.warn('%c' + this.prefix + level.debug, getStyle('debug'), ...args)
+    console.warn('%c' + this.prefix + level.debug, getStyle('debug'), ...args);
   }
 }

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/browser/console/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,wCAAqB","sourcesContent":["export * from './log'\n"]}

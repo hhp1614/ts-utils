@@ -1,4 +1,4 @@
-const nav = require('./config/nav');
+const nav = require('./config/nav')
 
 module.exports = {
   title: 'utils',
@@ -19,4 +19,4 @@ module.exports = {
   plugins: {
     'vuepress-plugin-auto-sidebar': {}
   }
-};
+}

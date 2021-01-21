@@ -1,14 +1,14 @@
-import { randomNum } from './randomNum';
+import { randomNum } from './randomNum'
 
 /**
  * 随机模式
  */
-type Mode = 'all' | 'dark' | 'light';
+type Mode = 'all' | 'dark' | 'light'
 
 /**
  * 颜色类型
  */
-type Type = 'hex' | 'rgb';
+type Type = 'hex' | 'rgb'
 
 /**
  * 随机十六进制颜色
@@ -19,15 +19,15 @@ function randomHexColor(mode: Mode) {
     all: '0123456789abcabcdefdef',
     dark: '0123401234abcabcabcabc',
     light: '5678956789defdefdefdef'
-  };
+  }
   if (!modeMap[mode]) {
-    throw new Error('`mode` 必须是 `all` | `dark` | `light`');
+    throw new Error('`mode` 必须是 `all` | `dark` | `light`')
   }
-  let res = '#';
+  let res = '#'
   for (let i = 0; i < 6; i++) {
-    res += modeMap[mode][randomNum(0, 21)];
+    res += modeMap[mode][randomNum(0, 21)]
   }
-  return res;
+  return res
 }
 
 /**
@@ -35,12 +35,12 @@ function randomHexColor(mode: Mode) {
  * @param mode 随机模式
  */
 function randomRgbColor(mode: Mode) {
-  const hexColor = randomHexColor(mode);
-  const rgbColor = [];
+  const hexColor = randomHexColor(mode)
+  const rgbColor = []
   for (let i = 1; i < hexColor.length; i += 2) {
-    rgbColor.push(parseInt('0x' + hexColor.slice(i, i + 2)));
+    rgbColor.push(parseInt('0x' + hexColor.slice(i, i + 2)))
   }
-  return `rgb(${rgbColor.join(',')})`;
+  return `rgb(${rgbColor.join(',')})`
 }
 
 /**
@@ -50,10 +50,10 @@ function randomRgbColor(mode: Mode) {
  */
 export function randomColor(mode: Mode = 'all', type: Type = 'hex') {
   if (type === 'hex') {
-    return randomHexColor(mode);
+    return randomHexColor(mode)
   }
   if (type === 'rgb') {
-    return randomRgbColor(mode);
+    return randomRgbColor(mode)
   }
-  throw new Error('`type` 必须是 `hex` | `rgb`');
+  throw new Error('`type` 必须是 `hex` | `rgb`')
 }

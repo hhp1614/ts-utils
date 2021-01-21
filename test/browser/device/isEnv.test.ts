@@ -1,4 +1,4 @@
-const os = require('os');
+const os = require('os')
 import {
   isLinux,
   isWin,
@@ -11,53 +11,53 @@ import {
   isWeChatAndroid,
   isMobile,
   isPC
-} from '../../../src/browser/device';
+} from '../../../src/browser/device'
 
 describe('browser/device:isEnv', () => {
   test('isWin()', () => {
-    const result = os.type() === 'Windows_NT';
-    expect(isWin()).toBe(result);
-  });
+    const result = os.type() === 'Windows_NT'
+    expect(isWin()).toBe(result)
+  })
 
   test('isLinux()', () => {
-    const result = os.type() === 'Linux';
-    expect(isLinux()).toBe(result);
-  });
+    const result = os.type() === 'Linux'
+    expect(isLinux()).toBe(result)
+  })
 
   test('isMac()', () => {
-    const result = os.type() === 'Darwin';
-    expect(isMac()).toBe(result);
-  });
+    const result = os.type() === 'Darwin'
+    expect(isMac()).toBe(result)
+  })
 
   test('isAndroid', () => {
-    expect(isAndroid()).toBeFalsy();
-  });
+    expect(isAndroid()).toBeFalsy()
+  })
 
   test('isWeChat', () => {
-    expect(isWeChat()).toBeFalsy();
-  });
+    expect(isWeChat()).toBeFalsy()
+  })
 
   test('isWeChatPC', () => {
-    expect(isWeChatPC()).toBeFalsy();
-  });
+    expect(isWeChatPC()).toBeFalsy()
+  })
 
   test('isWeChatMobile', () => {
-    expect(isWeChatMobile()).toBeFalsy();
-  });
+    expect(isWeChatMobile()).toBeFalsy()
+  })
 
   test('isWeChatIOS', () => {
-    expect(isWeChatIOS()).toBeFalsy();
-  });
+    expect(isWeChatIOS()).toBeFalsy()
+  })
 
   test('isWeChatAndroid', () => {
-    expect(isWeChatAndroid()).toBeFalsy();
-  });
+    expect(isWeChatAndroid()).toBeFalsy()
+  })
 
   test('isMobile', () => {
-    expect(isMobile()).toBeFalsy();
-  });
+    expect(isMobile()).toBeFalsy()
+  })
 
   test('isPC', () => {
-    expect(isPC()).toBeTruthy();
-  });
-});
+    expect(isPC()).toBeTruthy()
+  })
+})

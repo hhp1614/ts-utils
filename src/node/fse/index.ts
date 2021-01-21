@@ -1,1 +1,1 @@
-export { readFile } from './readFile';
+export { readFile } from './readFile'

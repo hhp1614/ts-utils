@@ -22,34 +22,34 @@ npm i @hhp1614/utils
 
 ```js
 // 全部引入
-import * as utils from '@hhp1614/utils';
+import * as utils from '@hhp1614/utils'
 
 // 使用
-utils.platform.module.fn();
+utils.platform.module.fn()
 ```
 
 ```js
 // 大模块引入
-import * as platform from '@hhp1614/utils/lib/platform';
-import { module } from '@hhp1614/utils/lib/platform';
+import * as platform from '@hhp1614/utils/lib/platform'
+import { module } from '@hhp1614/utils/lib/platform'
 
 // 使用
-platform.module.fn();
-module.fn();
+platform.module.fn()
+module.fn()
 ```
 
 ```js
 // 小模块引入
-import { fn } from '@hhp1614/utils/lib/platform/module';
+import { fn } from '@hhp1614/utils/lib/platform/module'
 
 // 使用
-fn();
+fn()
 ```
 
 ```js
 // 单个方法引入
-import fn from '@hhp1614/utils/lib/platform/module/fn';
+import fn from '@hhp1614/utils/lib/platform/module/fn'
 
 // 使用
-fn();
+fn()
 ```

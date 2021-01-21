@@ -7,7 +7,7 @@
 将需要延迟执行的函数(`func`)在函数(`debounce`)最后一次调用时的 `wait` 毫秒后执行
 
 ```text
-debounce(func, wait, [immediate = false]);
+debounce(func, wait, [immediate = false])
 ```
 
 - 参数：
@@ -18,15 +18,15 @@ debounce(func, wait, [immediate = false]);
 - 返回值 `Function`：防抖函数 `debounced`
     - `debounced.cancel()`：取消防抖
 ```js
-import { debounce } from '@hhp1614/utils/lib/common/func';
-let counter = 0;
-const add = () => counter++;
-const debouncedAdd = debounce(add, 32);
-debouncedAdd();
-debouncedAdd();
-console.log(counter); // 1
+import { debounce } from '@hhp1614/utils/lib/common/func'
+let counter = 0
+const add = () => counter++
+const debouncedAdd = debounce(add, 32)
+debouncedAdd()
+debouncedAdd()
+console.log(counter) // 1
 // 取消防抖
-debouncedAdd.cancel();
+debouncedAdd.cancel()
 ```
 
 ## throttle 函数节流
@@ -38,7 +38,7 @@ debouncedAdd.cancel();
 默认情况下，`throttle` 将在调用的第一时间尽快执行这个 `func`（第一次和最后一次都执行 `func`）
 
 ```text
-throttle(func, wait, [options = {}]);
+throttle(func, wait, [options = {}])
 ```
 
 - 参数：
@@ -51,13 +51,13 @@ throttle(func, wait, [options = {}]);
     - `throttled.cancel()`：取消节流
 - 例子：
 ```js
-import { throttle } from '@hhp1614/utils/lib/common/func';
-let counter = 0;
-const add = () => counter++;
-const throttledAdd = throttle(add, 32);
-throttledAdd();
-throttledAdd();
-console.log(counter); // 1
+import { throttle } from '@hhp1614/utils/lib/common/func'
+let counter = 0
+const add = () => counter++
+const throttledAdd = throttle(add, 32)
+throttledAdd()
+throttledAdd()
+console.log(counter) // 1
 // 取消节流
-throttledAdd.cancel();
+throttledAdd.cancel()
 ```

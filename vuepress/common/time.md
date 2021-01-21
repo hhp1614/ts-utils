@@ -3,7 +3,7 @@
 ## timeFormat 时间格式化
 
 ```text
-timeFormat([time = new Date()], [format = 'YYYY-MM-DD hh:mm:ss']);
+timeFormat([time = new Date()], [format = 'YYYY-MM-DD hh:mm:ss'])
 ```
 
 - 参数：
@@ -26,7 +26,7 @@ timeFormat([time = new Date()], [format = 'YYYY-MM-DD hh:mm:ss']);
     - `SS`：毫秒，三位数
 - 例子：
 ```js
-import { timeFormat } from '@hhp1614/utils/lib/common/time';
-console.log(timeFormat('2020-01-01 01:01:01.001', 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒'));
+import { timeFormat } from '@hhp1614/utils/lib/common/time'
+console.log(timeFormat('2020-01-01 01:01:01.001', 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒'))
 // '2020年01月01日 01时01分01秒 001毫秒'
 ```

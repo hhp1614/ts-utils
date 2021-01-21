@@ -1,4 +1,4 @@
-import { isFunction, isNumber, isPlainObject } from '../type';
+import { isFunction, isNumber, isPlainObject } from '../type'
 
 /**
  * 函数节流
@@ -11,51 +11,55 @@ import { isFunction, isNumber, isPlainObject } from '../type';
  * @param options.leading 如果想禁用第一次首先执行的话，传递 `{ leading: false }`
  * @param options.trailing 如果想禁用最后一次执行的话，传递 `{ trailing: false }`
  */
-export function throttle(func: Function, wait: number, options: { leading?: boolean; trailing?: boolean } = {}) {
+export function throttle(
+  func: Function,
+  wait: number,
+  options: { leading?: boolean; trailing?: boolean } = {}
+) {
   if (!isFunction(func)) {
-    throw new TypeError('`func` 必须是函数');
+    throw new TypeError('`func` 必须是函数')
   }
   if (!isNumber(wait)) {
-    throw new TypeError('`wait` 必须是数字');
+    throw new TypeError('`wait` 必须是数字')
   }
   if (!isPlainObject(options)) {
-    throw new TypeError('`options` 必须是普通对象');
+    throw new TypeError('`options` 必须是普通对象')
   }
 
-  let timeout: any;
-  let previous = 0;
+  let timeout: any
+  let previous = 0
 
   const throttled = function (...args: Array<any>) {
-    const now = Date.now();
+    const now = Date.now()
     // leading：false 表示禁用第一次执行
-    if (!previous && options.leading === false) previous = now;
+    if (!previous && options.leading === false) previous = now
     // 下次触发 func 剩余的时间
-    const remaining = wait - (now - previous);
+    const remaining = wait - (now - previous)
     // 如果没有剩余时间了或者改了系统时间
     if (remaining <= 0 || now < previous) {
       if (timeout) {
-        clearTimeout(timeout);
-        timeout = null;
+        clearTimeout(timeout)
+        timeout = null
       }
-      previous = now;
-      func.apply(this, args);
+      previous = now
+      func.apply(this, args)
     } else if (!timeout && options.trailing !== false) {
       timeout = setTimeout(() => {
-        previous = options.leading === false ? 0 : Date.now();
-        timeout = null;
-        func.apply(this, args);
-      }, remaining);
+        previous = options.leading === false ? 0 : Date.now()
+        timeout = null
+        func.apply(this, args)
+      }, remaining)
     }
-  };
+  }
 
   /**
    * 取消节流
    */
   throttled.cancel = () => {
-    clearTimeout(timeout);
-    previous = 0;
-    timeout = null;
-  };
+    clearTimeout(timeout)
+    previous = 0
+    timeout = null
+  }
 
-  return throttled;
+  return throttled
 }

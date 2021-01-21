@@ -5,7 +5,7 @@
 获取 `value` 的类型，底层使用 `Object.prototype.toString.call`
 
 ```text
-getType(value);
+getType(value)
 ```
 
 - 参数：
@@ -13,8 +13,8 @@ getType(value);
 - 返回值 `string`：参数的数据类型
 - 例子：
 ```js
-import { getType } from '@hhp1614/utils/lib/common/type';
-getType(''); // "string"
+import { getType } from '@hhp1614/utils/lib/common/type'
+getType('') // "string"
 ```
 
 ## is[Type] 判断类型
@@ -22,7 +22,7 @@ getType(''); // "string"
 判断类型 `value` 的类型是否为 `Type`
 
 ```text
-is[Type](value);
+is[Type](value)
 ```
 
 - `is[Type]`：
@@ -48,8 +48,8 @@ is[Type](value);
 - 返回值 `boolean`：是否为对应类型
 - 例子：
 ```js
-import { isString } from '@hhp1614/utils/lib/common/type';
-isString(''); // true
+import { isString } from '@hhp1614/utils/lib/common/type'
+isString('') // true
 ```
 
 ## check[Env] 判断环境
@@ -57,7 +57,7 @@ isString(''); // true
 判断环境是否为 `Env`
 
 ```text
-check[Env]([throwError = false], [errorContent]);
+check[Env]([throwError = false], [errorContent])
 ```
 
 - `check[Type]`：
@@ -69,6 +69,6 @@ check[Env]([throwError = false], [errorContent]);
 - 返回值 `boolean`：是否为对应环境
 - 例子：
 ```js
-import { checkBrowser } from '@hhp1614/utils/lib/common/type';
-checkBrowser(); // true
+import { checkBrowser } from '@hhp1614/utils/lib/common/type'
+checkBrowser() // true
 ```

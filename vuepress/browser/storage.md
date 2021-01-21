@@ -11,9 +11,9 @@
 - `Local.clear`：清空 localStorage
 - 例子：
 ```js
-import { Local } from '@hhp1614/utils/lib/browser/storage';
-Local.set('test', { foo: 'bar' }); // true
-Local.get('test'); // { foo: 'bar' }
+import { Local } from '@hhp1614/utils/lib/browser/storage'
+Local.set('test', { foo: 'bar' }) // true
+Local.get('test') // { foo: 'bar' }
 ```
 
 ## Session sessionStorage操作类
@@ -27,7 +27,7 @@ Local.get('test'); // { foo: 'bar' }
 - `Session.clear`：清空 sessionStorage
 - 例子：
 ```js
-import { Session } from '@hhp1614/utils/lib/browser/storage';
-Session.set('test', { foo: 'bar' }); // true
-Session.get('test'); // { foo: 'bar' }
+import { Session } from '@hhp1614/utils/lib/browser/storage'
+Session.set('test', { foo: 'bar' }) // true
+Session.get('test') // { foo: 'bar' }
 ```

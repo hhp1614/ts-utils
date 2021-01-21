@@ -5,14 +5,14 @@
 获取浏览器的 `userAgent`
 
 ```text
-getUA();
+getUA()
 ```
 
 - 返回值 `string`：当前浏览器UA
 - 例子：
 ```js
-import { getUA } from '@hhp1614/utils/lib/common/device';
-getUA(); // Mozilla...
+import { getUA } from '@hhp1614/utils/lib/common/device'
+getUA() // Mozilla...
 ```
 
 ## is[Env] 判断环境
@@ -20,7 +20,7 @@ getUA(); // Mozilla...
 判断当前环境是否为 [Env]
 
 ```text
-is[Env]();
+is[Env]()
 ```
 
 - `is[Env]`：
@@ -39,6 +39,6 @@ is[Env]();
 - 返回值 `boolean`：是否为对应环境
 - 例子：
 ```js
-import { isWin } from '@hhp1614/utils/lib/common/device';
-isWin();
+import { isWin } from '@hhp1614/utils/lib/common/device'
+isWin()
 ```

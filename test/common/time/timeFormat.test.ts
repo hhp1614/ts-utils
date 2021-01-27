@@ -33,27 +33,13 @@ describe('common/time:timeFormat', () => {
     expect(timeFormat()).toMatch(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/)
     expect(timeFormat(new Date(timeStr))).toBe(timeStr)
     expect(timeFormat(timeNum)).toBe(timeStr)
-    expect(timeFormat(timeNum, 'YY年M月D日 h时m分s秒 S毫秒')).toBe(
-      '20年1月1日 1时1分1秒 0毫秒'
-    )
-    expect(
-      timeFormat(timeNum + 100, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')
-    ).toBe('2020年01月01日 01时01分01秒 100毫秒')
-    expect(timeFormat(timeNum + 10, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')).toBe(
-      '2020年01月01日 01时01分01秒 010毫秒'
-    )
-    expect(timeFormat(timeNum + 1, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')).toBe(
-      '2020年01月01日 01时01分01秒 001毫秒'
-    )
-    expect(timeFormat(timeNum + 100, 'YY年M月D日 h时m分s秒 S毫秒')).toBe(
-      '20年1月1日 1时1分1秒 100毫秒'
-    )
-    expect(timeFormat(timeNum + 10, 'YY年M月D日 h时m分s秒 S毫秒')).toBe(
-      '20年1月1日 1时1分1秒 10毫秒'
-    )
-    expect(timeFormat(timeNum + 1, 'YY年M月D日 h时m分s秒 S毫秒')).toBe(
-      '20年1月1日 1时1分1秒 1毫秒'
-    )
+    expect(timeFormat(timeNum, 'YY年M月D日 h时m分s秒 S毫秒')).toBe('20年1月1日 1时1分1秒 0毫秒')
+    expect(timeFormat(timeNum + 100, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')).toBe('2020年01月01日 01时01分01秒 100毫秒')
+    expect(timeFormat(timeNum + 10, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')).toBe('2020年01月01日 01时01分01秒 010毫秒')
+    expect(timeFormat(timeNum + 1, 'YYYY年MM月DD日 hh时mm分ss秒 SS毫秒')).toBe('2020年01月01日 01时01分01秒 001毫秒')
+    expect(timeFormat(timeNum + 100, 'YY年M月D日 h时m分s秒 S毫秒')).toBe('20年1月1日 1时1分1秒 100毫秒')
+    expect(timeFormat(timeNum + 10, 'YY年M月D日 h时m分s秒 S毫秒')).toBe('20年1月1日 1时1分1秒 10毫秒')
+    expect(timeFormat(timeNum + 1, 'YY年M月D日 h时m分s秒 S毫秒')).toBe('20年1月1日 1时1分1秒 1毫秒')
   })
 
   test('timeFormat():time error', () => {

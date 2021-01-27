@@ -11,11 +11,7 @@ import { isFunction, isNumber, isPlainObject } from '../type'
  * @param options.leading 如果想禁用第一次首先执行的话，传递 `{ leading: false }`
  * @param options.trailing 如果想禁用最后一次执行的话，传递 `{ trailing: false }`
  */
-export function throttle(
-  func: Function,
-  wait: number,
-  options: { leading?: boolean; trailing?: boolean } = {}
-) {
+export function throttle(func: Function, wait: number, options: { leading?: boolean; trailing?: boolean } = {}) {
   if (!isFunction(func)) {
     throw new TypeError('`func` 必须是函数')
   }

@@ -27,9 +27,7 @@ export class Session {
    */
   static get(key: string) {
     try {
-      return JSON.parse(
-        <string>sessionStorage.getItem(upCase(this.prefix + key))
-      )
+      return JSON.parse(<string>sessionStorage.getItem(upCase(this.prefix + key)))
     } catch {
       return null
     }

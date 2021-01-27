@@ -73,11 +73,7 @@ function quickSort(arr: Arr, order: 'asc' | 'desc' = 'asc') {
  * @param order `asc`：升序，`desc`：降序，默认 `asc`
  * @param key 排序对象数组时，指定排序的 `key`
  */
-export function sort(
-  value: ArrayOrObject,
-  order: 'asc' | 'desc' = 'asc',
-  key?: string
-): ArrayOrObject {
+export function sort(value: ArrayOrObject, order: 'asc' | 'desc' = 'asc', key?: string): ArrayOrObject {
   // 原地排序对象数组，根据对象的 key 值排序
   if (key && Array.isArray(value)) {
     // 提取所有的 key 值

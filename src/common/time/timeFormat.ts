@@ -22,10 +22,7 @@ type TimeObject = {
  * @param time 时间对象、时间戳、可转换为时间对象字符串
  * @param format 格式，默认：`YYYY-MM-DD hh:mm:ss`
  */
-export function timeFormat(
-  time: Date | number | string = new Date(),
-  format = 'YYYY-MM-DD hh:mm:ss'
-) {
+export function timeFormat(time: Date | number | string = new Date(), format = 'YYYY-MM-DD hh:mm:ss') {
   const D = new Date(time)
 
   if (D.toDateString() === 'Invalid Date') {

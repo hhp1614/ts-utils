@@ -88,12 +88,8 @@ describe('common/collection:sort', () => {
   })
 
   test('sort():other', () => {
-    expect(JSON.stringify(sort([3, '1', 4, '2']))).toBe(
-      JSON.stringify(['1', '2', 3, 4])
-    )
-    expect(JSON.stringify(sort([3, '', 4, '2']))).toBe(
-      JSON.stringify(['', '2', 3, 4])
-    )
+    expect(JSON.stringify(sort([3, '1', 4, '2']))).toBe(JSON.stringify(['1', '2', 3, 4]))
+    expect(JSON.stringify(sort([3, '', 4, '2']))).toBe(JSON.stringify(['', '2', 3, 4]))
     const errMessage = '数组的 `item` 必须是 `number` 或 `string`'
     expect(() => sort([1, 2, true, 0])).toThrow(errMessage)
     expect(() => sort([1, 2, [], 0])).toThrow(errMessage)

@@ -1,3 +1,3 @@
 export function readFile() {
-  return 'readFile'
+  return 'readFile';
 }

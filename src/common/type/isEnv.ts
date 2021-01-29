@@ -4,11 +4,11 @@
  * @param errorContent 抛出异常时的错误内容
  */
 export function isBrowser(throwError = false, errorContent: any = '当前环境不是浏览器环境') {
-  const result = typeof window != null && typeof window === 'object' && (window as any).self === window
+  const result = typeof window != null && typeof window === 'object' && (window as any).self === window;
   if (throwError && !result) {
-    throw new Error(errorContent)
+    throw new Error(errorContent);
   }
-  return result
+  return result;
 }
 
 /**
@@ -17,9 +17,9 @@ export function isBrowser(throwError = false, errorContent: any = '当前环境�
  * @param errorContent 抛出异常时的错误内容
  */
 export function isNode(throwError = false, errorContent: any = '当前环境不是 NodeJS 环境') {
-  const result = typeof window != null && typeof global === 'object' && (global as any).global === global
+  const result = typeof window != null && typeof global === 'object' && (global as any).global === global;
   if (throwError && !result) {
-    throw new Error(errorContent)
+    throw new Error(errorContent);
   }
-  return result
+  return result;
 }

@@ -7,7 +7,7 @@ import { isFunction, isNumber, isPlainObject } from '../type';
  * @description 默认情况下，`throttle` 将在调用的第一时间尽快执行这个 `func`（第一次和最后一次都执行 `func`）
  * @param func 需要节流处理的函数
  * @param wait 延迟执行的时间，单位毫秒
- * @param options 选项，默认 `{}`
+ * @param options 默认 `{}`，选项
  * @param options.leading 如果想禁用第一次首先执行的话，传递 `{ leading: false }`
  * @param options.trailing 如果想禁用最后一次执行的话，传递 `{ trailing: false }`
  */

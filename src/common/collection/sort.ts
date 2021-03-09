@@ -9,7 +9,7 @@ type ArrayOrObject = Arr | Obj;
 /**
  * 快速排序
  * @param arr 需要快速排序的数组
- * @param order `asc`：升序，`desc`：降序，默认 `asc`
+ * @param order 默认 `asc`，`asc`：升序，`desc`：降序
  */
 function quickSort(arr: Arr, order: 'asc' | 'desc' = 'asc') {
   // 将小于基数的数放到基数左边，大于基数的数放到右边，并返回基数的位置
@@ -70,7 +70,7 @@ function quickSort(arr: Arr, order: 'asc' | 'desc' = 'asc') {
  * @description 支持排序对象数组
  * @description 支持排序对象
  * @param value 需要排序的数组或对象
- * @param order `asc`：升序，`desc`：降序，默认 `asc`
+ * @param order 默认 `asc`，`asc`：升序，`desc`：降序
  * @param key 排序对象数组时，指定排序的 `key`
  */
 export function sort(value: ArrayOrObject, order: 'asc' | 'desc' = 'asc', key?: string): ArrayOrObject {

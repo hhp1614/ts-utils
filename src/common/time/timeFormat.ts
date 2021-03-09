@@ -19,10 +19,10 @@ type TimeObject = {
 
 /**
  * 时间格式化
- * @param time 时间对象、时间戳、可转换为时间对象字符串
- * @param format 格式，默认：`YYYY-MM-DD hh:mm:ss`
+ * @param time 默认：`Date.now()`，时间对象、时间戳、可转换为时间对象字符串
+ * @param format 默认：`YYYY-MM-DD hh:mm:ss`，格式
  */
-export function timeFormat(time: Date | number | string = new Date(), format = 'YYYY-MM-DD hh:mm:ss') {
+export function timeFormat(time: Date | number | string = Date.now(), format = 'YYYY-MM-DD hh:mm:ss') {
   const D = new Date(time);
 
   if (D.toDateString() === 'Invalid Date') {
